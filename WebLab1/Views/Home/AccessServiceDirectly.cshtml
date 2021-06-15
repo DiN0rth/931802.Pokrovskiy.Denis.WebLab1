@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "AccessServiceDirectly";
+}
+@inject Calculation calculation
+
+<h1>AccessServiceDirectly</h1>
+
+<b>Rand Value First : @calculation.n1</b>
+<br>
+<b>Rand Value Second : @calculation.n2</b>
+<br>
+<b>Add :</b>
+<p class="m-0">@calculation.Plus()</p>
+<b>Sub :</b>
+<p class="m-0">@calculation.Minus()</p>
+<b>Mult :</b>
+<p class="m-0">@calculation.Multiply()</p>
+<b>Div :</b>
+<p class="m-0">@calculation.Divide()</p>
